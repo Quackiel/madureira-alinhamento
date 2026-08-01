@@ -414,18 +414,19 @@ ul { list-style: none; }
   position: relative;
   width: 100%;
   min-height: auto;
+  overflow: hidden;
 }
 
 .service-slide {
   position: relative;
   opacity: 0;
   visibility: hidden;
-  display: none;
+  display: none !important;
   transition: opacity .5s ease;
 }
 
 .service-slide.active {
-  display: block;
+  display: block !important;
   opacity: 1;
   visibility: visible;
 }
