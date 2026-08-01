@@ -682,6 +682,15 @@ ul { list-style: none; }
 .btn-map { width: 100%; margin-top: 12px; color: var(--dark); border-color: var(--gray-light); background: var(--white); }
 .btn-map:hover { color: var(--black); border-color: var(--primary); background: rgba(255,215,0,.12); }
 
+/* Map fallback when Google Maps is blocked */
+.map-fallback {
+  padding: 18px;
+  background: var(--gray-bg);
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--dark);
+}
+
 /* ========================================
    FOOTER
    ======================================== */
