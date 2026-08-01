@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada | Madureira Alinhamento</title>
+  <meta name="description" content="Página não encontrada. Volte para o site da Madureira Alinhamento.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+  <style>
+    .error-page {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--black);
+      text-align: center;
+      padding: 24px;
+    }
+    .error-content { max-width: 460px; }
+    .error-code {
+      font-size: clamp(5rem, 15vw, 8rem);
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .error-title {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .error-desc {
+      font-size: .9rem;
+      color: rgba(255,255,255,.5);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .error-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .error-actions .btn { font-size: .88rem; }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Página não encontrada</h1>
+      <p class="error-desc">Opa! Essa página não existe ou foi movida. Que tal voltar pro início ou dar uma olhada no nosso blog?</p>
+      <div class="error-actions">
+        <a href="./" class="btn btn-primary">← Voltar ao site</a>
+        <a href="blog/" class="btn btn-outline">📝 Blog</a>
+        <a href="https://wa.me/5571987967187?text=Ol%C3%A1!%20Encontrei%20um%20erro%20no%20site." target="_blank" class="btn btn-outline">📱 Fale Conosco</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Dependencies (se usar npm futuramente)
+node_modules/
+
+# System files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# Original unoptimized images (PNG keep as fallback is fine)
+# Keep these tracked - they're fallbacks
+
+# Logs
+*.log
