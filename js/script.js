@@ -204,21 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- MAP FALLBACK (adblock / blocked clients) ---------- */
-  setTimeout(() => {
-    const mapFrame = document.querySelector('.map-placeholder iframe');
-    if (mapFrame && !(window.google && window.google.maps)) {
-      mapFrame.style.display = 'none';
-      const fallback = document.createElement('div');
-      fallback.className = 'map-fallback';
-      fallback.style.padding = '18px';
-      fallback.style.borderRadius = '10px';
-      fallback.style.textAlign = 'center';
-      fallback.style.color = '#333';
-      fallback.style.background = 'var(--gray-bg)';
-      fallback.textContent = 'Mapa indisponível — desative o bloqueador de anúncios para visualizar.';
-      mapFrame.parentNode.appendChild(fallback);
-    }
-  }, 1800);
+  /* ---------- MAP FALLBACK disabled to keep Google Maps visible ---------- */
+  // The map iframe should remain visible even when Google Maps API objects are not present.
 
 });
